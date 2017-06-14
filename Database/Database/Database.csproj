@@ -110,6 +110,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelMSDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HotelMSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HotelMSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelMSDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="inquire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +150,12 @@
     <Compile Include="manage.Designer.cs">
       <DependentUpon>manage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +175,12 @@
     </Compile>
     <Compile Include="publish.Designer.cs">
       <DependentUpon>publish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
     </Compile>
     <Compile Include="roomLevel.cs">
       <SubType>Form</SubType>
@@ -199,6 +221,9 @@
     <EmbeddedResource Include="manage.resx">
       <DependentUpon>manage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prices.resx">
       <DependentUpon>Prices.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="publish.resx">
       <DependentUpon>publish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="roomLevel.resx">
       <DependentUpon>roomLevel.cs</DependentUpon>
@@ -310,6 +338,28 @@
     </None>
     <None Include="HotelMSDataSet7.xss">
       <DependentUpon>HotelMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="HotelMSDataSet8.xsc">
+      <DependentUpon>HotelMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HotelMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelMSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelMSDataSet8.xss">
+      <DependentUpon>HotelMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HotelMSDataSet9.xsc">
+      <DependentUpon>HotelMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="HotelMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelMSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelMSDataSet9.xss">
+      <DependentUpon>HotelMSDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
