@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelMSDataSet7" targetNamespace="http://tempuri.org/HotelMSDataSet7.xsd" xmlns:mstns="http://tempuri.org/HotelMSDataSet7.xsd" xmlns="http://tempuri.org/HotelMSDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Database.Properties.Settings.GlobalReference.Default.HotelMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="账目查询TableAdapter" GeneratorDataComponentClassName="账目查询TableAdapter" Name="账目查询" UserDataComponentName="账目查询TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelMSConnectionString (Settings)" DbObjectName="HotelMS.dbo.账目查询" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 顾客姓名, 身份证号, 性别, 联系方式, 房间号, 入住时间, 退房时间, 居住花费, 损坏赔偿, 总共支付 FROM dbo.账目查询</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="顾客姓名" DataSetColumn="顾客姓名" />
+              <Mapping SourceColumn="身份证号" DataSetColumn="身份证号" />
+              <Mapping SourceColumn="性别" DataSetColumn="性别" />
+              <Mapping SourceColumn="联系方式" DataSetColumn="联系方式" />
+              <Mapping SourceColumn="房间号" DataSetColumn="房间号" />
+              <Mapping SourceColumn="入住时间" DataSetColumn="入住时间" />
+              <Mapping SourceColumn="退房时间" DataSetColumn="退房时间" />
+              <Mapping SourceColumn="居住花费" DataSetColumn="居住花费" />
+              <Mapping SourceColumn="损坏赔偿" DataSetColumn="损坏赔偿" />
+              <Mapping SourceColumn="总共支付" DataSetColumn="总共支付" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelMSDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelMSDataSet7" msprop:Generator_UserDSName="HotelMSDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="账目查询" msprop:Generator_TableClassName="账目查询DataTable" msprop:Generator_TableVarName="table账目查询" msprop:Generator_TablePropName="账目查询" msprop:Generator_RowDeletingName="账目查询RowDeleting" msprop:Generator_RowChangingName="账目查询RowChanging" msprop:Generator_RowEvHandlerName="账目查询RowChangeEventHandler" msprop:Generator_RowDeletedName="账目查询RowDeleted" msprop:Generator_UserTableName="账目查询" msprop:Generator_RowChangedName="账目查询RowChanged" msprop:Generator_RowEvArgName="账目查询RowChangeEvent" msprop:Generator_RowClassName="账目查询Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="顾客姓名" msprop:Generator_ColumnVarNameInTable="column顾客姓名" msprop:Generator_ColumnPropNameInRow="顾客姓名" msprop:Generator_ColumnPropNameInTable="顾客姓名Column" msprop:Generator_UserColumnName="顾客姓名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="身份证号" msprop:Generator_ColumnVarNameInTable="column身份证号" msprop:Generator_ColumnPropNameInRow="身份证号" msprop:Generator_ColumnPropNameInTable="身份证号Column" msprop:Generator_UserColumnName="身份证号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="性别" msprop:Generator_ColumnVarNameInTable="column性别" msprop:Generator_ColumnPropNameInRow="性别" msprop:Generator_ColumnPropNameInTable="性别Column" msprop:Generator_UserColumnName="性别" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="联系方式" msprop:Generator_ColumnVarNameInTable="column联系方式" msprop:Generator_ColumnPropNameInRow="联系方式" msprop:Generator_ColumnPropNameInTable="联系方式Column" msprop:Generator_UserColumnName="联系方式" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="房间号" msprop:Generator_ColumnVarNameInTable="column房间号" msprop:Generator_ColumnPropNameInRow="房间号" msprop:Generator_ColumnPropNameInTable="房间号Column" msprop:Generator_UserColumnName="房间号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="入住时间" msprop:Generator_ColumnVarNameInTable="column入住时间" msprop:Generator_ColumnPropNameInRow="入住时间" msprop:Generator_ColumnPropNameInTable="入住时间Column" msprop:Generator_UserColumnName="入住时间" type="xs:dateTime" />
+              <xs:element name="退房时间" msprop:Generator_ColumnVarNameInTable="column退房时间" msprop:Generator_ColumnPropNameInRow="退房时间" msprop:Generator_ColumnPropNameInTable="退房时间Column" msprop:Generator_UserColumnName="退房时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="居住花费" msprop:Generator_ColumnVarNameInTable="column居住花费" msprop:Generator_ColumnPropNameInRow="居住花费" msprop:Generator_ColumnPropNameInTable="居住花费Column" msprop:Generator_UserColumnName="居住花费" type="xs:double" minOccurs="0" />
+              <xs:element name="损坏赔偿" msprop:Generator_ColumnVarNameInTable="column损坏赔偿" msprop:Generator_ColumnPropNameInRow="损坏赔偿" msprop:Generator_ColumnPropNameInTable="损坏赔偿Column" msprop:Generator_UserColumnName="损坏赔偿" type="xs:double" minOccurs="0" />
+              <xs:element name="总共支付" msprop:Generator_ColumnVarNameInTable="column总共支付" msprop:Generator_ColumnPropNameInRow="总共支付" msprop:Generator_ColumnPropNameInTable="总共支付Column" msprop:Generator_UserColumnName="总共支付" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

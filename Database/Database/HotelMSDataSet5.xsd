@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelMSDataSet5" targetNamespace="http://tempuri.org/HotelMSDataSet5.xsd" xmlns:mstns="http://tempuri.org/HotelMSDataSet5.xsd" xmlns="http://tempuri.org/HotelMSDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Database.Properties.Settings.GlobalReference.Default.HotelMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="房间标准TableAdapter" GeneratorDataComponentClassName="房间标准TableAdapter" Name="房间标准" UserDataComponentName="房间标准TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelMSConnectionString (Settings)" DbObjectName="HotelMS.dbo.房间标准" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 等级, 居住人数, 每日花费 FROM dbo.房间标准</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="等级" DataSetColumn="等级" />
+              <Mapping SourceColumn="居住人数" DataSetColumn="居住人数" />
+              <Mapping SourceColumn="每日花费" DataSetColumn="每日花费" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelMSDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelMSDataSet5" msprop:Generator_UserDSName="HotelMSDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="房间标准" msprop:Generator_TableClassName="房间标准DataTable" msprop:Generator_TableVarName="table房间标准" msprop:Generator_TablePropName="房间标准" msprop:Generator_RowDeletingName="房间标准RowDeleting" msprop:Generator_RowChangingName="房间标准RowChanging" msprop:Generator_RowEvHandlerName="房间标准RowChangeEventHandler" msprop:Generator_RowDeletedName="房间标准RowDeleted" msprop:Generator_UserTableName="房间标准" msprop:Generator_RowChangedName="房间标准RowChanged" msprop:Generator_RowEvArgName="房间标准RowChangeEvent" msprop:Generator_RowClassName="房间标准Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="等级" msprop:Generator_ColumnVarNameInTable="column等级" msprop:Generator_ColumnPropNameInRow="等级" msprop:Generator_ColumnPropNameInTable="等级Column" msprop:Generator_UserColumnName="等级">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="居住人数" msprop:Generator_ColumnVarNameInTable="column居住人数" msprop:Generator_ColumnPropNameInRow="居住人数" msprop:Generator_ColumnPropNameInTable="居住人数Column" msprop:Generator_UserColumnName="居住人数" type="xs:int" minOccurs="0" />
+              <xs:element name="每日花费" msprop:Generator_ColumnVarNameInTable="column每日花费" msprop:Generator_ColumnPropNameInRow="每日花费" msprop:Generator_ColumnPropNameInTable="每日花费Column" msprop:Generator_UserColumnName="每日花费" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:房间标准" />
+      <xs:field xpath="mstns:等级" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

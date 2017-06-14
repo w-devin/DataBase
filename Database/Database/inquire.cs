@@ -36,5 +36,25 @@ namespace Database
         {
             new livedRoom().Visible = true;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Prices().Visible = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new roomLevel().Visible = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new damageHis().Visible = true;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new Bills().Visible = true;
+        }
     }
 }

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelMSDataSet4" targetNamespace="http://tempuri.org/HotelMSDataSet4.xsd" xmlns:mstns="http://tempuri.org/HotelMSDataSet4.xsd" xmlns="http://tempuri.org/HotelMSDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Database.Properties.Settings.GlobalReference.Default.HotelMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="物件价格TableAdapter" GeneratorDataComponentClassName="物件价格TableAdapter" Name="物件价格" UserDataComponentName="物件价格TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelMSConnectionString (Settings)" DbObjectName="HotelMS.dbo.物件价格" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 名称, 价格 FROM dbo.物件价格</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="名称" DataSetColumn="名称" />
+              <Mapping SourceColumn="价格" DataSetColumn="价格" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelMSDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelMSDataSet4" msprop:Generator_UserDSName="HotelMSDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="物件价格" msprop:Generator_TableClassName="物件价格DataTable" msprop:Generator_TableVarName="table物件价格" msprop:Generator_TablePropName="物件价格" msprop:Generator_RowDeletingName="物件价格RowDeleting" msprop:Generator_RowChangingName="物件价格RowChanging" msprop:Generator_RowEvHandlerName="物件价格RowChangeEventHandler" msprop:Generator_RowDeletedName="物件价格RowDeleted" msprop:Generator_UserTableName="物件价格" msprop:Generator_RowChangedName="物件价格RowChanged" msprop:Generator_RowEvArgName="物件价格RowChangeEvent" msprop:Generator_RowClassName="物件价格Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="名称" msprop:Generator_ColumnVarNameInTable="column名称" msprop:Generator_ColumnPropNameInRow="名称" msprop:Generator_ColumnPropNameInTable="名称Column" msprop:Generator_UserColumnName="名称" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="价格" msprop:Generator_ColumnVarNameInTable="column价格" msprop:Generator_ColumnPropNameInRow="价格" msprop:Generator_ColumnPropNameInTable="价格Column" msprop:Generator_UserColumnName="价格" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

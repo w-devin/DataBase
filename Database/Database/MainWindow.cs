@@ -26,5 +26,15 @@ namespace Database
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new manage().Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new publish().Visible = true;
+        }
     }
 }

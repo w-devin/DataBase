@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelMSDataSet6" targetNamespace="http://tempuri.org/HotelMSDataSet6.xsd" xmlns:mstns="http://tempuri.org/HotelMSDataSet6.xsd" xmlns="http://tempuri.org/HotelMSDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Database.Properties.Settings.GlobalReference.Default.HotelMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="物件损坏记录TableAdapter" GeneratorDataComponentClassName="物件损坏记录TableAdapter" Name="物件损坏记录" UserDataComponentName="物件损坏记录TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelMSConnectionString (Settings)" DbObjectName="HotelMS.dbo.物件损坏记录" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 房间号, 物品名称, 损坏数量, 赔偿金额 FROM dbo.物件损坏记录</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="房间号" DataSetColumn="房间号" />
+              <Mapping SourceColumn="物品名称" DataSetColumn="物品名称" />
+              <Mapping SourceColumn="损坏数量" DataSetColumn="损坏数量" />
+              <Mapping SourceColumn="赔偿金额" DataSetColumn="赔偿金额" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelMSDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelMSDataSet6" msprop:Generator_UserDSName="HotelMSDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="物件损坏记录" msprop:Generator_TableClassName="物件损坏记录DataTable" msprop:Generator_TableVarName="table物件损坏记录" msprop:Generator_TablePropName="物件损坏记录" msprop:Generator_RowDeletingName="物件损坏记录RowDeleting" msprop:Generator_RowChangingName="物件损坏记录RowChanging" msprop:Generator_RowEvHandlerName="物件损坏记录RowChangeEventHandler" msprop:Generator_RowDeletedName="物件损坏记录RowDeleted" msprop:Generator_UserTableName="物件损坏记录" msprop:Generator_RowChangedName="物件损坏记录RowChanged" msprop:Generator_RowEvArgName="物件损坏记录RowChangeEvent" msprop:Generator_RowClassName="物件损坏记录Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="房间号" msprop:Generator_ColumnVarNameInTable="column房间号" msprop:Generator_ColumnPropNameInRow="房间号" msprop:Generator_ColumnPropNameInTable="房间号Column" msprop:Generator_UserColumnName="房间号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="物品名称" msprop:Generator_ColumnVarNameInTable="column物品名称" msprop:Generator_ColumnPropNameInRow="物品名称" msprop:Generator_ColumnPropNameInTable="物品名称Column" msprop:Generator_UserColumnName="物品名称" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="损坏数量" msprop:Generator_ColumnVarNameInTable="column损坏数量" msprop:Generator_ColumnPropNameInRow="损坏数量" msprop:Generator_ColumnPropNameInTable="损坏数量Column" msprop:Generator_UserColumnName="损坏数量" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="赔偿金额" msprop:Generator_ColumnVarNameInTable="column赔偿金额" msprop:Generator_ColumnPropNameInRow="赔偿金额" msprop:Generator_ColumnPropNameInTable="赔偿金额Column" msprop:Generator_UserColumnName="赔偿金额" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
