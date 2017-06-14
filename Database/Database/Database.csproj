@@ -116,6 +116,12 @@
     <Compile Include="inquire.Designer.cs">
       <DependentUpon>inquire.cs</DependentUpon>
     </Compile>
+    <Compile Include="LeaveMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaveMessage.Designer.cs">
+      <DependentUpon>LeaveMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="livedRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicNews.Designer.cs">
+      <DependentUpon>PublicNews.cs</DependentUpon>
+    </Compile>
     <Compile Include="publish.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,9 @@
     <EmbeddedResource Include="inquire.resx">
       <DependentUpon>inquire.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LeaveMessage.resx">
+      <DependentUpon>LeaveMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="livedRoom.resx">
       <DependentUpon>livedRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +211,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PublicNews.resx">
+      <DependentUpon>PublicNews.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="publish.resx">
       <DependentUpon>publish.cs</DependentUpon>
     </EmbeddedResource>

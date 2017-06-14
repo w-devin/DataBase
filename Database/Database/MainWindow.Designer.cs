@@ -72,7 +72,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "MainWindow";
-            this.Text = "Form1";
+            this.Text = "酒店管理系统 --made by 王亚文, 计科1503, 20151222114";
             this.ResumeLayout(false);
 
         }

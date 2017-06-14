@@ -16,5 +16,15 @@ namespace Database
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new PublicNews().Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new LeaveMessage().Visible = true;
+        }
     }
 }
