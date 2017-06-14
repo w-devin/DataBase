@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelMSDataSet1" targetNamespace="http://tempuri.org/HotelMSDataSet1.xsd" xmlns:mstns="http://tempuri.org/HotelMSDataSet1.xsd" xmlns="http://tempuri.org/HotelMSDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Database.Properties.Settings.GlobalReference.Default.HotelMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="所有房间TableAdapter" GeneratorDataComponentClassName="所有房间TableAdapter" Name="所有房间" UserDataComponentName="所有房间TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelMSConnectionString (Settings)" DbObjectName="HotelMS.dbo.所有房间" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 房间号, 房间标准, 已预定, 已居住 FROM dbo.所有房间</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="房间号" DataSetColumn="房间号" />
+              <Mapping SourceColumn="房间标准" DataSetColumn="房间标准" />
+              <Mapping SourceColumn="已预定" DataSetColumn="已预定" />
+              <Mapping SourceColumn="已居住" DataSetColumn="已居住" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelMSDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelMSDataSet1" msprop:Generator_UserDSName="HotelMSDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="所有房间" msprop:Generator_TableClassName="所有房间DataTable" msprop:Generator_TableVarName="table所有房间" msprop:Generator_TablePropName="所有房间" msprop:Generator_RowDeletingName="所有房间RowDeleting" msprop:Generator_RowChangingName="所有房间RowChanging" msprop:Generator_RowEvHandlerName="所有房间RowChangeEventHandler" msprop:Generator_RowDeletedName="所有房间RowDeleted" msprop:Generator_UserTableName="所有房间" msprop:Generator_RowChangedName="所有房间RowChanged" msprop:Generator_RowEvArgName="所有房间RowChangeEvent" msprop:Generator_RowClassName="所有房间Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="房间号" msprop:Generator_ColumnVarNameInTable="column房间号" msprop:Generator_ColumnPropNameInRow="房间号" msprop:Generator_ColumnPropNameInTable="房间号Column" msprop:Generator_UserColumnName="房间号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="房间标准" msprop:Generator_ColumnVarNameInTable="column房间标准" msprop:Generator_ColumnPropNameInRow="房间标准" msprop:Generator_ColumnPropNameInTable="房间标准Column" msprop:Generator_UserColumnName="房间标准" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="已预定" msprop:Generator_ColumnVarNameInTable="column已预定" msprop:Generator_ColumnPropNameInRow="已预定" msprop:Generator_ColumnPropNameInTable="已预定Column" msprop:Generator_UserColumnName="已预定" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="已居住" msprop:Generator_ColumnVarNameInTable="column已居住" msprop:Generator_ColumnPropNameInRow="已居住" msprop:Generator_ColumnPropNameInTable="已居住Column" msprop:Generator_UserColumnName="已居住" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:所有房间" />
+      <xs:field xpath="mstns:房间号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
