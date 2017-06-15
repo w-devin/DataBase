@@ -31,5 +31,10 @@ namespace Database
         {
             new recordDamage().Visible = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new checkout().Visible = true;
+        }
     }
 }
