@@ -21,5 +21,10 @@ namespace Database
         {
             new Order().Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new checkin().Visible = true;
+        }
     }
 }
