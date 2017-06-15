@@ -71,6 +71,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "损坏登记";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // manage
             // 

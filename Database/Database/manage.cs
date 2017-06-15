@@ -26,5 +26,10 @@ namespace Database
         {
             new checkin().Visible = true;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new recordDamage().Visible = true;
+        }
     }
 }
