@@ -36,5 +36,10 @@ namespace Database
         {
             new checkout().Visible = true;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new calOrder().Visible = true;
+        }
     }
 }

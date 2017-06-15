@@ -64,6 +64,18 @@
     <Compile Include="Bills.Designer.cs">
       <DependentUpon>Bills.cs</DependentUpon>
     </Compile>
+    <Compile Include="calOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calOrder.Designer.cs">
+      <DependentUpon>calOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cat.Designer.cs">
+      <DependentUpon>cat.cs</DependentUpon>
+    </Compile>
     <Compile Include="checkedRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +232,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bills.resx">
       <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calOrder.resx">
+      <DependentUpon>calOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cat.resx">
+      <DependentUpon>cat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="checkedRoom.resx">
       <DependentUpon>checkedRoom.cs</DependentUpon>

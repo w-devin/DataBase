@@ -107,6 +107,10 @@ namespace Database
                         cmd.CommandText = strcmd;
                         succNum = cmd.ExecuteNonQuery();
 
+                        strcmd = "update Rooms set checked = 'N', lived = 'N' where roomNo = '" + roomNo + "';";
+                        cmd.CommandText = strcmd;
+                        succNum = cmd.ExecuteNonQuery();
+
 
                     }
 

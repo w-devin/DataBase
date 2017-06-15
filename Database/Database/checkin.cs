@@ -73,6 +73,10 @@ namespace Database
                     else
                     {
                         MessageBox.Show("开房成功");
+                        this.Close();
+                        strcmd = "update Rooms set lived = 'Y' where roomNo = '" + roomNo + "';";
+                        cmd.CommandText = strcmd;
+                        succNum = cmd.ExecuteNonQuery();
                     }
                 }
             }

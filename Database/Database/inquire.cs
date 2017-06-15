@@ -56,5 +56,10 @@ namespace Database
         {
             new Bills().Visible = true;
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            new cat().Visible = true;
+        }
     }
 }
