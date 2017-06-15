@@ -91,7 +91,7 @@ namespace Database
 
                     succNum += cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("1");
+                   
 
                     if (succNum == 0)
                     {
@@ -100,6 +100,14 @@ namespace Database
                     else
                     {
                         MessageBox.Show("退房成功, 您总共需要支付" + cost + "元");
+
+
+                        require.Close();
+                        strcmd = "update DamagedItems set charged = 'Y' where roomNo = '" + roomNo + "';";
+                        cmd.CommandText = strcmd;
+                        succNum = cmd.ExecuteNonQuery();
+
+
                     }
 
 
